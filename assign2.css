@@ -1,0 +1,43 @@
+body{
+    background-color: #fff;
+    
+    margin: 0;
+    font-size: larger;
+}
+h1{
+    text-align: center;
+}
+table{
+    width: 100%;
+    max-width: 600px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+td{
+    padding: 10px;
+}
+form{
+    padding-left: 430px;
+    
+}
+label{
+    font-weight: bold;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 8px;
+}
+.buttonapply{
+    font-size: large;
+    font-weight: 500;
+    background-color:#6d6875;
+    cursor: pointer;
+    color: #fff;
+}
+.buttonapply:hover{
+    background-color: #2a0800;
+    color: beige;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
