@@ -5,30 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RV Form</title>
     <link rel="stylesheet" href="assign2.css">
+    <script>
+        function validate(){
+
+            var fullname=document.getElementById("yourname")
+            var register_number=document.getElementById("usn")
+
+            if(fullname.value=="" || register_number.value=="" ){
+                alert("Give your proper Name & USN")
+                return false;
+            }
+            else{
+                
+                true;
+            }
+        }
+    </script>
 </head>
 <body>
     <h1>RV Application Form</h1>
-    <form action="#" method="post">
+    <form action="msg.html" onsubmit="return validate()" method="post">
         <table>
             <tr>
                 <td><label for="yourname">Your Name :</label></td>
-                <td><input type="text" name="yourname" id="yourname" required> </td>
+                <td><input type="text" name="yourname" id="yourname"  placeholder="Madan H K"> </td>
             </tr>
             <tr>
                 <td><label for="usn">Registration Number(USN) :</label></td>
-                <td><input type="text" name="usn" id="usn"> </td>
+                <td><input type="text" name="usn" id="usn" placeholder="4JN22CS075"> </td>
             </tr>
             <tr>
                 <td><label for="sem">Semester :</label></td>
-                <td><input type="text" name="sem" id="sem"> </td>
+                <td><input type="text" name="sem" id="sem" placeholder="5"> </td>
             </tr>
             <tr>
                 <td><label for="sem">Section :</label></td>
-                <td><input type="text" name="sec" id="sec"> </td>
+                <td><input type="text" name="sec" id="sec" placeholder="B"> </td>
             </tr>
             <tr>
                 <td><label for="branch">Branch:</label></td>
-                <td><input type="text" name="branch" id="branch"> </td>
+                <td><input type="text" name="branch" id="branch" placeholder="CSE"> </td>
             </tr>
             <tr>
                 <td><label for="subn">Subject Name(s) :</label></td>
@@ -49,9 +65,10 @@
             
             <tr>
                 <td colspan="2" style="text-align: center;">
-                <input type="submit" value="Apply RV" class="buttonapply"></td>
+                <input type="submit" value="Apply for RV" class="buttonapply"></td>
                 </tr>
         </table>
     </form>
+   
 </body>
 </html>
