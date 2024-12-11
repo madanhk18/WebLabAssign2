@@ -6,6 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 style="font-size: 21pt; font-family:fantasy, sans-serif;">Your RV form is successfully applied</h1>
+    <h1 style="font-size: 21pt; font-family:fantasy, sans-serif; display: flex;margin-top: 60px; justify-content: center;">Your Revaluation is successfully applied</h1>
+    <h2>Submitted Data:</h2>
+    <div id="output"></div>
+  
+    <script>
+      document.getElementById("myForm").addEventListener("submit", function(event) {
+        // Prevent the form from refreshing the page
+        event.preventDefault();
+  
+        // Get the form data
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+  
+        // Display the submitted data
+        const outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = `
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Message:</strong> ${message}</p>
+        `;
+      });
+    </script>
 </body>
 </html>
+
+
+

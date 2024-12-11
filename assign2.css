@@ -1,19 +1,22 @@
 body{
-    background-color: #fff;
+    background-color:rgb(60, 60, 60);
     
     margin: 0;
     font-size: larger;
 }
 h1{
     text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 table{
     width: 100%;
     max-width: 600px;
-    background-color: #f0f0f0;
+    background-color:rgb(210, 210, 210);
     padding: 20px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     border-radius: 4px;
+    color: rgb(12, 38, 12);
 }
 td{
     padding: 10px;
@@ -31,13 +34,15 @@ input[type="text"]{
 }
 .buttonapply{
     font-size: large;
+    font-family:'Times New Roman', Times, serif;
     font-weight: 500;
     background-color:#6d6875;
     cursor: pointer;
-    color: #fff;
+    color: rgb(12, 38, 12);
 }
 .buttonapply:hover{
     background-color: #2a0800;
     color: beige;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 9px rgba(180, 180, 180, 2);
+    
 }
